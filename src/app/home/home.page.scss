@@ -1,27 +1,25 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+h2{
+    display: flex;
+    justify-content: center;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-col {
+    text-align: center;
+  }
+  
+ion-row {
+    height: 150px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.header-main{
+    background-color: #92C01B;
 }
 
-#container a {
-  text-decoration: none;
+.menu-opcion{
+    background-color: red;
+    border-radius: 12px;
+    box-shadow: 0 0 0, 0 10 gray, 0 20 gray, 0 0 0;
+    height: 100%;
+    width: 100%;
 }
+

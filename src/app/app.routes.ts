@@ -10,4 +10,20 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'ruta-menu',
+    loadComponent: () => import('./ruta-menu/ruta-menu.page').then( m => m.RutaMenuPage)
+  },
+  {
+    path: 'ruta-detalles',
+    loadComponent: () => import('./ruta-detalles/ruta-detalles.page').then( m => m.RutaDetallesPage)
+  },
+  {
+    path: 'sign-up',
+    loadComponent: () => import('./access/sign-up/sign-up.page').then( m => m.SignUpPage)
+  },
+  {
+    path: 'sign-in',
+    loadComponent: () => import('./access/sign-in/sign-in.page').then( m => m.SignInPage)
+  },
 ];

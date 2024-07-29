@@ -1,20 +1,52 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+<div class="ion-page" id="main-content">
+  <ion-header [translucent]="true" class="header-main">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Ruta al día</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Contenido del menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <a href="/src/app/ruta-detalles/ruta-detalles.page.html"><div  class="menu-opcion"></div></a>
+        <ion-col>
+        </ion-col>
+        <ion-col>
+          <div class="menu-opcion"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div class="menu-opcion"></div>
+        </ion-col>
+        <ion-col>
+          <div class="menu-opcion"></div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
+  <ion-footer>
+    <h2>Este es un footer</h2>
+  </ion-footer>
+</div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+
+
