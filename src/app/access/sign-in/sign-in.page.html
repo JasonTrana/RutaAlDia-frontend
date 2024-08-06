@@ -1,13 +1,49 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>sign-in</ion-title>
+  <ion-toolbar color="verde-1">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">sign-in</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-content>
+      <form >
+        <ion-item>
+          <ion-input labelPlacement ="floating" >
+            <div slot="label">Nombres</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input labelPlacement ="floating" >
+            <div slot="label">Apellidos</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input labelPlacement ="floating" type="email">
+            <div slot="label">Correo</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input labelPlacement ="floating" type="password">
+            <div slot="label">Contraseña</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input labelPlacement ="floating" type="password" >
+            <div slot="label">Verificar contraseña</div>
+          </ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <div class="boton">
+        <ion-button (click)="registrar()" slot="end" color="verde-1"> Registrar</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+<ion-footer>
+  <h2></h2>
+</ion-footer>

@@ -1,0 +1,17 @@
+
+
+
+ion-header, ion-toolbar, ion-footer, ion-button{
+    background: var(--ion-color-verde-1);
+}
+
+ion-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: end;
+}
