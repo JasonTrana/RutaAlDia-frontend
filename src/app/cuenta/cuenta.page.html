@@ -1,13 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cuenta</ion-title>
+<ion-header [translucent]="true" color="verde-1">
+  <ion-toolbar color="verde-1">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Cuenta</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-list>
-    <ion-item>
-      hola
-    </ion-item>
-  </ion-list>
+  <ion-header>
+    <ion-icon name="people"></ion-icon>
+    <ion-text class="fs-20"><strong>Nombres y apellidos del usuario</strong></ion-text>
+    <ion-text>Correo</ion-text>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>preferencia</ion-item>
+      <ion-item>Notificaciones</ion-item>
+      <ion-item>Favoritos</ion-item>
+      <ion-item>Accesibilidad</ion-item>
+      <ion-item>Ajustes</ion-item>
+    </ion-list>
+  </ion-content>
 </ion-content>

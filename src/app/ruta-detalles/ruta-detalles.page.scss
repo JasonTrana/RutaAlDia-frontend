@@ -1,0 +1,36 @@
+
+.map{
+    background: blue;
+    height: 180px;
+}
+
+.info-ruta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    background-color: orange;
+}
+
+.info-ruta ion-text{
+    color: white;
+}
+
+ion-card{
+    width: 100%
+}
+
+.horario-bus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: rgb(235, 235, 98);
+    box-shadow: 0 0 0, 0 0 0, 0 0 20 gray, 0 0 0;
+    font-size: 18px;
+    font-weight: 20px;
+}

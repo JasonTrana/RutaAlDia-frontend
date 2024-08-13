@@ -5,28 +5,46 @@ h2{
 
 ion-col {
     text-align: center;
-  }
+    width: 100%;
+    max-width: 18rem;
+}
   
 ion-row {
-    height: 150px;
+    display: flex;
+    justify-content: center;
+    max-height: 15rem;
+    height: 15rem;
 }
 
 ion-toolbar, ion-header{
     background: var(--ion-color-verde-1);
+
 }
 
 .logo{
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 40%;
+    margin: 16px 0;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.logo h3{
+    font-weight: 700;
+    font-size: 2.5rem;
 }
 
 .menu-opcion{
     background-color: rgb(236, 214, 87);
     border-radius: 12px;
-    box-shadow: 0 0 0, 0 10 gray, 0 20 gray, 0 0 0;
+    box-shadow: 0 0 20px gray;
+    padding: 2rem 0;
     height: 100%;
     width: 100%;
     display: flex;
